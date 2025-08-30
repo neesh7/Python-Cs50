@@ -3,6 +3,9 @@ To create a python file use below commands
 1. hello.py
 2. escape_sequences.py
 3. StringMethods.py
+4. integers_and_operators.py
+5. calculator.py
+6. funtions.py
 ## Commands
 ```bash
 # linux way
