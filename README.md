@@ -16,6 +16,7 @@ $ uv init -p 3.13.7 my-project-name
 - Regular Expressions
 - Object-Oriented-Programming
 - Python for Professionals
+    - FastAPI 
 
 Note: For every modules we expolre here there will be separate folder structure will be used to organize them, to maintain a clean structure.
 ## Tech Stacks used

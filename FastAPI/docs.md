@@ -1,4 +1,4 @@
-similar to express.js fastapi is there in python
+FastAPI is a modern, high-performance web framework for building APIs (Application Programming Interfaces) with Python. It is designed to be fast, efficient, and easy to use, leveraging standard Python type hints for data validation and automatic documentation generation. 
 
 ## required 
 - uvicorn
