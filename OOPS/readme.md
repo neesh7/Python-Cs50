@@ -31,19 +31,24 @@ class Car:
 
 my_car = Car("Tesla", 120)
 my_car.drive()
+```
 ## 🧠 2. Class Method and self
 
 - self refers to the current instance of the class.
 
 - It allows access to instance variables and methods.
+```python
 class Student:
     def __init__(self, name):
         self.name = name
 
     def greet(self):
         print(f"Hello, I'm {self.name}")
+```
 ## 🧬 3. Inheritance
 -  Inheritance allows a class to inherit attributes and methods from another class.
+
+```python
 class Animal:
     def speak(self):
         print("Animal speaks")
@@ -54,9 +59,11 @@ class Dog(Animal):
 
 dog = Dog()
 dog.speak()  # Woof!
+```
 ## 🔒 4. Encapsulation
 -  Encapsulation restricts access to internal variables using naming conventions.
 
+```python
 class BankAccount:
     def __init__(self):
         self.__balance = 0  # private
@@ -66,9 +73,11 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
+```
 ## 🧮 5. Class Variables
 -  Class variables are shared across all instances of a class.
 
+```python
 class Counter:
     count = 0  # class variable
 
@@ -80,20 +89,22 @@ a = Counter()
 b = Counter()
 print(Counter.count)  # 2
 
-
+```
 ## ⚙️ 6. Static Methods
 Static methods don’t access instance or class data. Use @staticmethod
 
+```python
 class MathUtils:
     @staticmethod
     def add(x, y):
         return x + y
 
 print(MathUtils.add(5, 3))  # 8
-
+```
 ## 🧼 7. Property Decorators
 Use @property and @<property>.setter for clean, controlled access.
 
+```python
 class Student:
     def __init__(self, age):
         self.__age = age
@@ -106,10 +117,12 @@ class Student:
     def age(self, value):
         if value > 0:
             self.__age = value
-
+```
 ## 🧬 8. Class Inheritance and isinstance()
 isinstance() checks if an object is an instance of a class or its subclass.
 
+
+```python
 class Animal:
     pass
 
@@ -120,10 +133,12 @@ dog = Dog()
 print(isinstance(dog, Dog))     # True
 print(isinstance(dog, Animal))  # True
 
-
+```
 ## 🧩 9. Multiple Inheritance
 A class can inherit from multiple parent classes.
 
+
+```python
 class Person:
     def __init__(self, name):
         self.name = name
@@ -140,3 +155,4 @@ class Student(Person, Learner):
 maya = Student("Maya", "D.A.V")
 print(maya.name)         # Maya
 print(maya.study())      # Studying...
+```
