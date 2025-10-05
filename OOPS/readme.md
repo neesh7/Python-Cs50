@@ -4,13 +4,16 @@ OOPs stands for Object-Oriented Programming (OOP) — a paradigm that organizes 
 
 - Basic class and object
 - class method and self
+- instance variable and instance method
 - Inheritence
 - Encapsulation
-- class variables
+- class variables & classmethods
 - static methods
-- property decorators
+- property decorators (Getter and Setter)
 - class inheritance and isintance() function
 - Multiple inheritance
+- Operator Overloading
+
 
 # 🐍 Python Object-Oriented Programming (OOP) Concepts
 
