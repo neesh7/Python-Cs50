@@ -17,6 +17,6 @@ $ code hello.py
 # to delete
 $ rm hello.py hello2.py
 
-# running py file
+# running py files
 $ python hello.py # here python is the interpreter which will convert our program into binarier so computer can understand
 ```
