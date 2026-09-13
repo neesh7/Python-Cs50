@@ -66,6 +66,78 @@ name: str = "Neesh" # type hints
 # Python dominates data science, web dev (Django/Flask), automation because dev speed > raw CPU speed for most tasks. Add type hints + mypy if you need safety.
 
 ###### 4. Integer and operators
+# + - add
+# - - subtract
+# * - multiply
+# / - divide (output in float)
+# % - Modulo Operator it gives remainders
+# // - integer division
+# ** - power
+print(4/2)
+print(4//2)
 ###### 5. Escape Sequences
+# Concept of escape sequences
+print("hello\nworld")  # \n is used for new line
+print("hello\tworld")  # \t is used for tab space
+print("hello\\world")  # \\ is used to print single backslash
+print('hello "world"')  # using single quote to print double quote
+print("hello 'world'")  # using double quote to print single quote
+print("hello \"world\"")  # using escape sequence to print double quote inside double quote
+print('hello \'world\'')  # using escape sequence to print single quote inside single quote
+print(r"hello\nworld")  # r is used to print raw string means escape sequences will not be processed
+print("hello\bworld")  # \b is used for backspace
+print("hello\rworld")  # \r is used for carriage return
+print("hello\fworld")  # \f is used for form feed
+print("hello\vworld")  # \v is used for vertical tab
+print("hello\aworld")  # \a is used for alert (bell)
+print("hello\0world")  # \0 is used for null character
+print("hello\100world")  # \100 is used for octal value
+print("hello\x40world")  # \x40 is used for hexadecimal value
+print("hello\u0040world")  # \u0040 is used for unicode value
+print("hello\U00000040world")  # \U00000040 is used for unicode value with 8 digits
+print("hello\b\bworld")  # multiple backspace
+print("hello\t\tworld")  # multiple tab space
+print("hello\n\nworld")  # multiple new line
 ###### 6. Taking Inputs and Print Method
+your_name = input("Please enter your name: ")
+your_age = int(input("Please enter your age: "))
+if your_name != None and your_age != None:
+    if your_age >= 18:
+        print(f"Hey {your_name.capitalize()} you are eligible to vote! ")
+    else:
+        print(f"Hey {your_name.capitalize()} you are not eligible to vote! ")
 ###### 7. String Methods
+# Ask user for name
+name = input("What's your name1? ")  # using input function without assignment operator
+
+# Removing whitespaces from both ends in string using strip method
+name = name.strip()
+
+"""
+Method vs Function
+Method is a function which is associated with an object and is called using dot notation
+function is a block of code which is called by its name
+Method is called on an object and function is called independently
+
+"""
+
+# Capitalize the first letter of the name using capitalize method
+# name = name.capitalize()
+
+# title method to capitalize the first letter of each word in the name - ususally used for names
+name = name.title()
+
+print(f"Hello, {name}")
+
+#chaining multiple methods at once
+# print(f"Hello, {name.strip().title()}")
+
+name2 = input("What's your name2? ") .strip().title()
+print(f"Hello, {name2}")
+
+
+# using split 
+name3 = input("What's your name2? ") .strip().title()
+first, last = name3.split(" ")  # unpacking the list into two variables
+print(f"Hello, {first}")
+
